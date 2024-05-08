@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<style>
+    input[type=text], select {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 2px solid #ee0000;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 50%;
+      background-color: #4ed6c9;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    </style>
+<div class="registration-form">
+    <h2>Test Form</h2>
+    <div class="form-group">
+        <label for="title" class="required-label">Title:</label>
+        <select id="title" name="title">
+            <option value="">Select Title...</option>
+            <option value="Mr.">Mr</option>
+            <option value="Mrs.">Mrs</option>
+            <option value="Engr.">Engr</option>
+            <option value="Dr.">Dr</option>
+            <option value="Prof.">Prof</option>
+            <option value="Hon.">Hon</option>
+            <option value="Elder.">Elder</option>
+            <option value="Elder.">Chief</option>
+        </div>
+      </select>
+
+           <div class="form-group">    
+          <div> 
+              <label for="first_name">First Name:</label><br>
+              <input type="text" id="first_name" name="first_name"><br>
+            </div>
+
+            <div class="form-group">
+              <label for="middle-name">Middle-name:</label><br>
+              <input type="text" id="middle-name" name="middle-name"><br>
+            </div>
+
+            <div class="form-group">
+              <label for="surname">Surname:</label><br>
+              <input type="text" id="surname" name="surname"><br>
+              </div>
+
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                  <label for ="male" class="radio-inline"><input type="radio" name="gender" id="male">Male</label>
+                  <label for ="female" class="radio-inline"><input type="radio" name="gender" id="female">Female</label>
+                  <label for ="female" class="radio-inline"><input type="radio" name="gender" id="female">😒😒</label>
+              </div>
+                  <div class="form-group">
+                  <label for="date of birth" class="required-label">Date of Birth:</label>
+              <input type="date" id="date of birth" name="date of birth"placeholder="Enter your Date of birth" required>
+      </div>
+      <div class="form-group">
+        <label for="personal ID">ESBN and Land Size:</label><br>
+        <input type="text" id="personal ID" name="personal ID"><br>
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label><br>
+      <input type="text" id="address" name="address"><br>
+
+              <div class="form-group">
+                <label for="source of income"> Source of income:</label><br>
+                <input type="text" id="source of income" name="source of income"><br>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="phone" class="form-control" id="phone"name="phone"/>
+          </div>
+ 
+            <div class="form-group">
+              <label for="marital status" class="required-label">Marital Status:</label>
+            <select id="marital status" name="marital status">
+                <option value="">Select Marital Status...</option>
+                <option value="Married">Married</option>
+                <option value="Single">Single</option>
+                <option value="Divorced">Divorced</option>
+                </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address:</label>
+              <input type="email" class="form-control" id="email"name="email"/>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="building services" class="required-label">Building Services:</label>
+                    <select id="building services" name="building services">
+                      <option value="">Select Land use...</option>
+                      <option value="Residential">Residential</option>
+                      <option value="Commercial">Commercial</option>
+                      <option value="Industrial">Industrial</option>
+                    </select><br><br>
+                    
+                    <label for="Eswama profile" class="required-label">Waste Profile:</label>
+                    <textarea id="Eswama Profile" name="Eswama Profile"placeholder="Enter your ESWAMA Profile" required></textarea>
+                    </select><br><br>
+                    <script>
+                        function previewImage() {
+                          var preview = document.getElementById('preview');
+                          var file = document.querySelector('input[type=file]').files[0];
+                          var reader = new FileReader();
+                    
+                          reader.onloadend = function () {
+                            preview.src = reader.result;
+                          }
+                    
+                          if (file) {
+                            reader.readAsDataURL(file);
+                          } else {
+                            preview.src = "";
+                          }
+                        }
+                      </script>
+                    </head>
+                    <body>
+                      
+                      <form>
+                        <label for="photo">Upload Photo:</label>
+                        <br>
+                        <input type="file" accept="image/*" capture="camera" onchange="previewImage();">
+                        <br>
+                        <img id="preview" src="" alt="Preview">
+                        <br>
+                        <input type="submit" value="upload">
+                      </form>
+                    </body>
+                  
+                    </button>
+                    <form>
+                      <form onsubmit="return confirm('Are you sure you want to submit?');">
+                        <form action="submit.php" method="post">
+                        <button type="submit">Submit</button>  
+                            
+                      <button type="submit">Generate Receipt</button>
+                      <script>
+                        function generate() {
+                            alert("Generated!");
+                        }
+                    </script>
+                    
+                         </form>
+                        </button>
+              
+                </div>
+                <style>
+                  .receipt-container {
+                    display: flex;
+                  justify-content: space-between;
+                  }
+              
+                  .receipt {
+                    text-align: center;
+                  }
+                  
+              </style>
+              
+              </head>
+              <body>
+                    <input type="submit" value="Submit">
+        <script>
+            <html/>

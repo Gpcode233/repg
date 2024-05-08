@@ -1,0 +1,32 @@
+body{
+    background-image:url('IMG_5251.JPG');
+    background-repeat:no-repeat;
+    background-position:center ;
+    background-attachment:cover;
+    background-size: fixed;
+  }
+  
+  
+  h1 {
+  text-align: left;
+  padding:30px;
+  margin: 10px;
+  background-color:rgb(90, 127, 98);
+  color:lime; 
+  font-size: 45px;
+  font-weight: bold;
+  }
+   body {    
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+     font-weight: bold;
+    box-sizing: border-box;
+    display: block;
+    color:rgb(171, 4, 4);
+          justify-content: center;
+          align-items: toph;
+          height: 80%;
+          margin: 0;
+          padding: 0;
+      }
